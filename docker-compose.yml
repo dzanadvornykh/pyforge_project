@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  app:
+    build: ./project
+    container_name: my_app
+    restart: always
+    tty: true
+    stdin_open: true
+    depends_on: 
+      - db
+    volumes:
+      - './project:/project'
+
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: my_database
+    ports:
+      - 5432:5432

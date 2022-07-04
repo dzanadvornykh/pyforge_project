@@ -34,9 +34,9 @@ pip install pytest pytest-mock
 
 Then run:
 ```
-pytest app/tests
+pytest project/tests
 ```
 
 
 ## Logs
-logs will be saved in `app/logs`
+logs will be saved in `project/logs`

@@ -29,7 +29,7 @@ pyforge --print
 To run tests with pytest you should have `pytest` and `pytest-mock` installed.
 If they are not installed install them with following commands in your virtual environment:
 ```
-pip install pytest, pytest-mock
+pip install pytest pytest-mock
 ```
 
 Then run:

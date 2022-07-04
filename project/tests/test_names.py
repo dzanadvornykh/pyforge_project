@@ -1,4 +1,5 @@
 import pytest
+
 from apps.validation import InvalidCompoundError, CompoundAlreadyInDBError
 from apps.getting_info import get_info_about_compound
 
